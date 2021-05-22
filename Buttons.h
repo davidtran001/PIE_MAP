@@ -6,7 +6,7 @@
 
 /* 
  * File:   ChooseMap.h
- * Author: yangz142
+ * Author: Raymond
  *
  * Created on March 10, 2021, 7:12 PM
  */
@@ -19,16 +19,7 @@
 #include <algorithm>
 #include <string>
 #include <cstring>
-#include "m1.h"
-#include "m2.h"
-#include "globals.h"
-#include "helperFunctions.h"
-#include "StreetsDatabaseAPI.h"
-#include "globals.h"
-#include "ezgl/application.hpp"
-#include "ezgl/graphics.hpp"
-#include "graphics.hpp"
-#include "OSMDatabaseAPI.h"
+
 
 extern::std::vector<std::string> vectorOfMapNames;
 extern::std::string mapPathFirst;
