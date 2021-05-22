@@ -4,6 +4,12 @@
  * and open the template in the editor.
  */
 
+/* 
+ * File:   searchBar.cpp
+ * Author: Raymond
+ *
+ * Created on May 7, 2021, 8:01 PM
+ */
 #include "searchBar.h"
 
 //This function allows a search bar printed on canvas to react to user key presses
