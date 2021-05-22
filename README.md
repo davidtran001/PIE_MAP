@@ -1,5 +1,7 @@
 # PIE_MAP_UI
-PIE_MAP_UI is the main user interface for PIE_MAP, a Google Map-like mapping software with search, path finding, and an user interface allowing mouse and keyboard input and easy navigation. PIE_MAP is a mapping project co-developed by Raymond Yang (https://github.com/Electronic-Yoda), Stephen Wang (https://github.com/Stephenwang3801), and David Tran (https://github.com/davidtran001)
+PIE_MAP_UI is the main user interface for PIE_MAP, a Google Map-like mapping application with search, path finding, and an user interface allowing mouse and keyboard input and easy navigation. 
+
+PIE_MAP is co-developed by Raymond Yang (https://github.com/Electronic-Yoda), Stephen Wang (https://github.com/Stephenwang3801), and David Tran (https://github.com/davidtran001)
 
 The following features are availiable in PIE_MAP_UI
 - A Generate Buttons Algorithm
