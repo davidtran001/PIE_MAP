@@ -1,5 +1,5 @@
 # PIE_MAP_UI
-The user interface for PIE_MAP, a Google Map-like mapping software with search, path finding, and efficient UI
+The user interface for PIE_MAP, a Google Map-like mapping software with search, path finding, and a strong user interface allowing mouse and keyboard input and easy navigation
 
 The following features are availiable in PIE_MAP_UI
 - A Generate Buttons Algorithm
