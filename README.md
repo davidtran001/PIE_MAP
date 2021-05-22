@@ -9,4 +9,4 @@ The following features are availiable in PIE_MAP_UI
 - Data structures and functions/methods enabling program reaction to user input (mouse, keyboard)
 
 PIE_MAP_UI depends on the ezgl graphics library https://github.com/mariobadr/ezgl 
-as well as files in PIE_MAP_DEVELOPEMENT
+as well as files in PIE_MAP_Development
