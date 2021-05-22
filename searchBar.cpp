@@ -113,7 +113,7 @@ void generateSearchBarWClear(ezgl::renderer *g,
     int horizontalNum = 1; //number of buttons horizontally
     float buttonWidth = searchBarWidth; //you can type in negative (ex:-0.3 if you want it fixed to 30 percent of screen width)
     float buttonHeight = SearchBarHeight;
-    float buttonXSpacing = 0; //horizontal space between the middle point of each button (set to 0 if you want it to be 
+    float buttonXSpacing = 0; //horizontal space between the middle point of each button (set to 0 if you want it to be 1 column)
     float buttonYSpacing = 0; //vertical space between the middle point of each button
     	
     int numConstraint = -1; //set to negative if you don't have a maximum number constraint on how many buttons to show
