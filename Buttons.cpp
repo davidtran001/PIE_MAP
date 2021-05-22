@@ -190,7 +190,7 @@ void OldMakeManyButtonsAlgorithm(ezgl::renderer *g,
     
     
     float temp = (1.0 - ratio) / 2;
-    if (buttonXSpacing == 0) { //convoluted logic don't copy this in the new version
+    if (buttonXSpacing == 0) { //don't copy this in the new version
         xmin = temp * rec.width(); //std::cout<< buttonWidth << std:: endl;
     }
     else {
