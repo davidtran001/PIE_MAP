@@ -63,7 +63,7 @@ void searchBarReactToKeyboard(
 
     }
 
-    if (keyName == "Return") { //std::cout<< "return" << std::endl;
+    if (keyName == "Return") { 
         (*actOnReturnFunc) (app, dropDownIDsVector, dropDownNamesVector);
     }
 }
