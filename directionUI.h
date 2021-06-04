@@ -27,7 +27,7 @@
 
 //This header file declares the variables and functions of the DirectionUI namespace
 //DirectionUI stores the variables and functions necessary for the User Interface related to direction search
-namespace DirectionUI {
+namespace direction_ui {
     
     extern bool open ;
     extern bool firstSearchBarOn;
