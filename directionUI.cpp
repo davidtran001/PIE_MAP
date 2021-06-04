@@ -18,7 +18,7 @@
 
 
 //Initialization of variables and function Implementations of the namespace DirectionUI
-namespace DirectionUI {
+namespace direction_ui {
     bool open = false;
     bool firstSearchBarOn = false;
     bool secondSearchBarOn = false;
@@ -52,7 +52,7 @@ namespace DirectionUI {
 
 }
 
-void DirectionUI::draw_panel(ezgl::renderer* g) {
+void direction_ui::draw_panel(ezgl::renderer* g) {
     //set coordinate system to screen
     g->set_coordinate_system(ezgl::SCREEN);
     //set background colour of the interface
@@ -91,7 +91,7 @@ void DirectionUI::draw_panel(ezgl::renderer* g) {
     g->set_coordinate_system(ezgl::WORLD);
 }
 
-void DirectionUI::drawSearchBarsHelper(ezgl::renderer *g) {
+void direction_ui::drawSearchBarsHelper(ezgl::renderer *g) {
     drawSearchBars(g);
     
     //check if 1st searchBar is on
@@ -105,7 +105,7 @@ void DirectionUI::drawSearchBarsHelper(ezgl::renderer *g) {
     }
 }
 extern std::vector<std::string> write_directions(IntersectionIdx , IntersectionIdx);
-void DirectionUI::drawDirectionsOnPanel(ezgl::renderer *g) {
+void direction_ui::drawDirectionsOnPanel(ezgl::renderer *g) {
     ezgl::rectangle rec = g->get_visible_screen();
     int horizontalNum = 1; //number of buttons horizontally
     float buttonWidth = panelWidth-panelWidth; //you can type in negative (ex:-0.3 if you want it fixed to 30 percent of screen width)
@@ -134,7 +134,7 @@ void DirectionUI::drawDirectionsOnPanel(ezgl::renderer *g) {
         yInitial);  //set to negative if you want buttons to be vertically centered on screen 
 } 
 
-void DirectionUI::drawFirstSearchBarWhenItsOn(ezgl::renderer *g) {
+void direction_ui::drawFirstSearchBarWhenItsOn(ezgl::renderer *g) {
     ezgl::rectangle rec = g->get_visible_screen();
     //draw highlight around search bar
     g->set_color(ezgl::YELLOW);
@@ -142,7 +142,7 @@ void DirectionUI::drawFirstSearchBarWhenItsOn(ezgl::renderer *g) {
 
 }
 
-void DirectionUI::drawSecondSearchBarWhenItsOn(ezgl::renderer *g) {
+void direction_ui::drawSecondSearchBarWhenItsOn(ezgl::renderer *g) {
     ezgl::rectangle rec = g->get_visible_screen();
     //draw highlight around search bar
     g->set_color(ezgl::YELLOW);
@@ -150,7 +150,7 @@ void DirectionUI::drawSecondSearchBarWhenItsOn(ezgl::renderer *g) {
 
 }
 
-void DirectionUI::drawSearchBars(ezgl::renderer *g) {
+void direction_ui::drawSearchBars(ezgl::renderer *g) {
     ezgl::rectangle rec = g->get_visible_screen();
     
     //decide what texts to draw on searchBar
@@ -193,7 +193,7 @@ void DirectionUI::drawSearchBars(ezgl::renderer *g) {
         yInitial);  //set to negative if you want buttons to be vertically centered on screen    
 }
 
-void DirectionUI::drawDropDownListHelper(ezgl::renderer *g, int searchBarIdx) {
+void direction_ui::drawDropDownListHelper(ezgl::renderer *g, int searchBarIdx) {
     
     ezgl::rectangle rec = g->get_visible_screen();
     
@@ -229,7 +229,7 @@ void DirectionUI::drawDropDownListHelper(ezgl::renderer *g, int searchBarIdx) {
         yInitial);  //set to negative if you want buttons to be vertically centered on screen
 }
 
-void DirectionUI::drawDropDownListA(ezgl::renderer *g) {
+void direction_ui::drawDropDownListA(ezgl::renderer *g) {
     
     ezgl::rectangle rec = g->get_visible_screen();
     
@@ -260,7 +260,7 @@ void DirectionUI::drawDropDownListA(ezgl::renderer *g) {
         yInitial);  //set to negative if you want buttons to be vertically centered on screen
 }
 
-void DirectionUI::drawDropDownListB(ezgl::renderer *g) {
+void direction_ui::drawDropDownListB(ezgl::renderer *g) {
     
     ezgl::rectangle rec = g->get_visible_screen();
     
@@ -291,7 +291,7 @@ void DirectionUI::drawDropDownListB(ezgl::renderer *g) {
         yInitial);  //set to negative if you want buttons to be vertically centered on screen
 }
 
-void DirectionUI::drawClearButtons(ezgl::renderer *g) {
+void direction_ui::drawClearButtons(ezgl::renderer *g) {
     ezgl::rectangle rec = g->get_visible_screen();
     //first call algorithm to make many buttons
     int horizontalNum = 1; //number of buttons horizontally
@@ -319,7 +319,7 @@ void DirectionUI::drawClearButtons(ezgl::renderer *g) {
 }
 
 
-void DirectionUI::drawADirectionButton(double xMin, double yMin, float boxWidth, float boxHeight, std::string name, ezgl::renderer *g, int fontSize) {
+void direction_ui::drawADirectionButton(double xMin, double yMin, float boxWidth, float boxHeight, std::string name, ezgl::renderer *g, int fontSize) {
     g->set_coordinate_system(ezgl::SCREEN);
     g->set_color(ezgl::WHITE);
     g->set_text_rotation(0);
@@ -340,7 +340,7 @@ std::vector<std::string> DirectionUI:: getDropDownIntNameVector(std::vector<int>
     } 
     return DropDownIntNameVector;
 }
-void DirectionUI::actOnReturnPressed (ezgl::application *app, std::vector<int> dropDownIDsVector, std::vector<std::string> dropDownNamesVector) {
+void direction_ui::actOnReturnPressed (ezgl::application *app, std::vector<int> dropDownIDsVector, std::vector<std::string> dropDownNamesVector) {
     if (vectorTextsSearchInput[0].length() > 0) {
         if (dropDownNamesVector.size() == 0 || dropDownIDsVector.size() == 0) {
             return;
@@ -351,7 +351,7 @@ void DirectionUI::actOnReturnPressed (ezgl::application *app, std::vector<int> d
 }
 
 extern std::vector<StreetIdx> findIntersectionIdsFromPartialStreetName(std::string int_prefix);
-void DirectionUI::reactToKeyboard(ezgl::application *app, char *key_name){
+void direction_ui::reactToKeyboard(ezgl::application *app, char *key_name){
     //first process the key input and put in string
     std::string keyName = key_name;
     ezgl::renderer *g = app->get_renderer();
@@ -386,7 +386,7 @@ void DirectionUI::reactToKeyboard(ezgl::application *app, char *key_name){
     } 
 }
 
-void DirectionUI::setTextInputValidity(int searchBarIndex) {
+void direction_ui::setTextInputValidity(int searchBarIndex) {
     //int i = searchBarIndex;
     /*//get input to lower case
     std::string lowerCaseInput;
@@ -433,7 +433,7 @@ void DirectionUI::setTextInputValidity(int searchBarIndex) {
 
 
 
-void DirectionUI::reactToMouseClick(ezgl::application* app, GdkEventButton* event, double worldX, double worldY) {
+void direction_ui::reactToMouseClick(ezgl::application* app, GdkEventButton* event, double worldX, double worldY) {
     ezgl::renderer* g = app->get_renderer();
     g->set_coordinate_system(ezgl::SCREEN);
     ezgl::rectangle rec = g->get_visible_screen();
@@ -533,7 +533,7 @@ void DirectionUI::reactToMouseClick(ezgl::application* app, GdkEventButton* even
 }
 extern int getIntersectionIDAndHighlight( double x, double y);
 
-void DirectionUI::setIntersectionSelectValidity(ezgl::application* app, double x, double y) {
+void direction_ui::setIntersectionSelectValidity(ezgl::application* app, double x, double y) {
     
     app->get_renderer(); //not used
     if (DirectionUI::firstSearchInputValid && DirectionUI::secondSearchInputValid) {
@@ -562,7 +562,7 @@ void DirectionUI::setIntersectionSelectValidity(ezgl::application* app, double x
         
 } 
 
-void DirectionUI::generalSetIntersectionValidity(int ID, std::string intName) {
+void direction_ui::generalSetIntersectionValidity(int ID, std::string intName) {
 
     //if no intersection has been chosen
     if (DirectionUI::firstSearchInputValid == false && DirectionUI::secondSearchInputValid == false) {
@@ -612,7 +612,7 @@ void DirectionUI::generalSetIntersectionValidity(int ID, std::string intName) {
 
 
 
-void DirectionUI::setStateOfIntPOI(ezgl::application* app, /*GdkEventButton* event ,*/ double x, double y) {
+void direction_ui::setStateOfIntPOI(ezgl::application* app, /*GdkEventButton* event ,*/ double x, double y) {
     ezgl::renderer* g = app->get_renderer();
         g->set_coordinate_system(ezgl::WORLD);
 
@@ -671,7 +671,7 @@ void DirectionUI::setStateOfIntPOI(ezgl::application* app, /*GdkEventButton* eve
     }
 }
 
-void DirectionUI::setPrevHighlightFalse() {
+void direction_ui::setPrevHighlightFalse() {
     
   
     /*if (POIOn) {
@@ -685,7 +685,7 @@ void DirectionUI::setPrevHighlightFalse() {
     }
 }
 
-void DirectionUI::setStateOfHighlightsWhenSearchBarOn(ezgl::application* app, double x, double y) {
+void direction_ui::setStateOfHighlightsWhenSearchBarOn(ezgl::application* app, double x, double y) {
     ezgl::renderer* g = app->get_renderer();
         g->set_coordinate_system(ezgl::WORLD);
 
