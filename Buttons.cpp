@@ -74,9 +74,9 @@ void makeManyButtonsAlgorithm(ezgl::renderer *g,
         int fontSize,       //font size of text on the buttons
         int numConstraint, //put negative value if unneeded
         float xInitial,    //x location of the leftmost button. Set to negative if you want buttons to be horizontally centered on screen
-        float yInitial) { //y location of the topmost button. Set to negative if you want buttons to be vertically centered on screen
+        float yInitial)  //y location of the topmost button. Set to negative if you want buttons to be vertically centered on screen
         
-
+{
     ezgl::rectangle rec = g->get_visible_screen();
     
     //Set number of Buttons
@@ -159,8 +159,8 @@ void OldMakeManyButtonsAlgorithm(ezgl::renderer *g,
         float buttonYSpacing, //vertical space between the middle point of each button
         int fontSize,
         int numConstraint, //put negative value if unneeded
-        int yInitial) { //set to negative if you want buttons to be vertically centered in the screen
-    
+        int yInitial)  //set to negative if you want buttons to be vertically centered in the screen
+{    
     //create a list of boxes and text of the various cities
     ezgl::rectangle rec = g->get_visible_screen();
     
