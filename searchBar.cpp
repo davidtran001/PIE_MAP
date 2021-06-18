@@ -105,8 +105,8 @@ void generateSearchBarWClear(ezgl::renderer *g,
         float SearchBarHeight, //height of each button
         int fontSize,       //font size of text on the buttons
         float xInitial,    //x location of the leftmost point. Set to negative if you want buttons to be horizontally centered on screen
-        float yInitial) { //y location of the topmost point. Set to negative if you want buttons to be vertically centered on screen
-
+        float yInitial)  //y location of the topmost point. Set to negative if you want buttons to be vertically centered on screen
+{
     ezgl::rectangle rec = g->get_visible_screen();
     
     //Call generate buttons algorithm on searchBar
