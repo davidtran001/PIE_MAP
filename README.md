@@ -1,7 +1,7 @@
 # PIE_MAP
 PIE_MAP is a mapping application written in C++ allowing users to search for intersections, parks, points of interests, and directions in 19 major cities around the world. Developed for tourists in mind, PIE_MAP offers a great user interface with impressive visuals and easy navigation. 
 
-Since some of the project are a part of the university's course work, most of PIE_MAP is kept private on GitHub. This repository is meant to demonstrate PIE_MAP's functionality with gifs and photos. Additionally, it stores PIE_MAP's user interface and its relevant files, which are a deviation from the course and are meant to greatly expand PIE_MAP's user experience.
+Since some of the project are a part of the university's course work, most files of PIE_MAP are kept private on GitHub. This repository is meant to demonstrate PIE_MAP's functionality with gifs and photos. Additionally, it stores PIE_MAP's user interface and its relevant files, which are a deviation from the course and are meant to greatly expand PIE_MAP's user experience.
 
 PIE_MAP depends on the ezgl graphics library https://github.com/mariobadr/ezgl, the GTK library, and data in OpenStreetMap. 
 
