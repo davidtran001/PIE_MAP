@@ -387,48 +387,7 @@ void direction_ui::reactToKeyboard(ezgl::application *app, char *key_name){
 }
 
 void direction_ui::setTextInputValidity(int searchBarIndex) {
-    //int i = searchBarIndex;
-    /*//get input to lower case
-    std::string lowerCaseInput;
-    std::transform(vectorTextsSearchInput[i].begin(), 
-            vectorTextsSearchInput[i].end(),
-            lowerCaseInput.begin(), 
-            ::tolower);
-    
-    //first check if there is " and " 
-    if (lowerCaseInput.find(" and ") == std::string::npos) {
-        //this means there is no " and "
-        //do something such as print red
-        //return; //not found
-        return;
-    }
-    //get each street name
-    //then check if streets are correct
-    std::string firstStreet = lowerCaseInput.substr(0, lowerCaseInput.find(" and "));
-    std::string secondStreet = lowerCaseInput.substr(lowerCaseInput.find(" and ") + 5);
-    int intID = -1;
-    
-    intID = getIntersectionID(firstStreet, secondStreet);
-    std::cout << firstStreet << secondStreet << intID << std::endl;
-    if (intID == -1) {
-        return;
-    } //means intersectionID not found
-    */
-    
-    /*std::string replaceAndWithAmpersand;
-        //first check if there is " and " 
-    if (lowerCaseInput.find(" and ") != std::string::npos) {
-        //this means there is " and "
-        //must replace "and " with " & "
-        replaceAndWithAmpersand = std::regex_replace(replaceAndWithAmpersand, std::regex("\\ and ", " & ");
-    } */
-    
-    
-    //std::vector<int> = findIntersectionIdsFromPartialStreetName(text);
-    //if ()
-    
-//    generalSetIntersectionValidity(intID, getIntersectionName(intID));
-    
+		//unnecessary atm
 }
 
 
@@ -698,58 +657,14 @@ void direction_ui::setStateOfHighlightsWhenSearchBarOn(ezgl::application* app, d
     //Calculating the distance between mouse and POI vs mouse and intersection
     LatLon pos = LatLon(y, x);
     LatLon mouse_pos = LatLon(getLatFromY(pos.latitude()), getLonFromX(pos.longitude()));
-//    int POI_id = findClosestPOINoName(pos);
     int inter_id = findClosestIntersection(mouse_pos);
     LatLon inter_pos = int_data.vectorIntPosition[inter_id];
-//    LatLon POI_pos = vectorPOI[POI_id].position;
-//    auto mousePOI = std::make_pair (mouse_pos, POI_pos);
     auto mouseIntersection = std::make_pair (mouse_pos, inter_pos);
-//    double POIDistance = findDistanceBetweenTwoPoints(mousePOI);
     double IntersectionDistance = findDistanceBetweenTwoPoints(mouseIntersection);
-    /*
-    //std::cout<<"yes" << std:: endl;
-    //If statements determine which entities to highlight and which not to
-    //Inside If statement checks if previous markings were clicked and un-highlights them
-    if(POIDistance < IntersectionDistance && POIDistance < 25 && vectorPOI[POI_id].highlight == true){
-        if(highlightChecker(POIOn, interOn)){ 
-            vectorPOI[prevId].highlight = false;
-            int_data.vectorIntPositionXY[prevId].highlight = false;
-        }
-        vectorPOI[POI_id].highlight = false;
-        //prevId = POI_id;
-        //POIOn = false; 
-    }else if(POIDistance < IntersectionDistance && POIDistance < 25 && vectorPOI[POI_id].highlight ==  false){ 
-        if(highlightChecker(POIOn, interOn)){ 
-            vectorPOI[prevId].highlight = false;
-            int_data.vectorIntPositionXY[prevId].highlight = false;
-        }
-        vectorPOI[POI_id].highlight = true;
-        //prevId = POI_id;
-        //POIOn = true; 
-    }else if(IntersectionDistance < POIDistance && IntersectionDistance < 50 && int_data.vectorIntPositionXY[inter_id].highlight == true){
-        if(highlightChecker(POIOn, interOn)){ 
-            vectorPOI[prevId].highlight = false;
-            int_data.vectorIntPositionXY[prevId].highlight = false;
-        }
-        int_data.vectorIntPositionXY[inter_id].highlight = false;
-        //prevId = inter_id;
-        //interOn = false;     
-    }else if(IntersectionDistance < POIDistance && IntersectionDistance < 50 && int_data.vectorIntPositionXY[inter_id].highlight == false){
-        if(highlightChecker(POIOn, interOn)){ 
-            vectorPOI[prevId].highlight = false;
-            int_data.vectorIntPositionXY[prevId].highlight = false;
-        }
-        int_data.vectorIntPositionXY[inter_id].highlight = true; 
-        tempIntID == inter_id;
-        intSelected = true;
-        //std::cout<<"interOn" << std:: endl;
-        //prevId = inter_id;
-        //interOn = true;
-    } */
-    //temporary code
+
+    //check if int selected
     if (IntersectionDistance < 60 && int_data.vectorIntPositionXY[inter_id].highlight == false) {
-        //int_data.vectorIntPositionXY[inter_id].highlight = true; 
-        //tempIntID == inter_id;
+        
         intSelected = true;
     }
     
