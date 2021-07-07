@@ -3,7 +3,8 @@ PIE_MAP is a mapping application written in C++ allowing users to search for int
 
 Since some of the project are a part of the university's course work, most files of PIE_MAP are kept private on GitHub. This repository is meant to demonstrate PIE_MAP's functionality with gifs and photos. Additionally, it stores PIE_MAP's user interface and its relevant files, which are a deviation from the course and are meant to greatly expand PIE_MAP's user experience.
 
-PIE_MAP depends on the ezgl graphics library https://github.com/mariobadr/ezgl, the GTK library, and data in OpenStreetMap. 
+PIE_MAP is co-developed by Raymond Yang (https://github.com/Electronic-Yoda), Stephen Wang (https://github.com/Stephenwang3801), and David Tran (https://github.com/davidtran001). 
+It depends on the ezgl graphics library https://github.com/mariobadr/ezgl, the GTK library, and data in OpenStreetMap. 
 
 PIE_MAP_UI is the main user interface for PIE_MAP. The following features are avaliable in PIE_MAP_UI:
 - A Generate Buttons Algorithm
@@ -13,4 +14,3 @@ PIE_MAP_UI is the main user interface for PIE_MAP. The following features are av
 - Data structures and functions/methods enabling program reactions to user input (mouse, keyboard)
 - Drawing major components of the UI on canvas
 
-PIE_MAP is co-developed by Raymond Yang (https://github.com/Electronic-Yoda), Stephen Wang (https://github.com/Stephenwang3801), and David Tran (https://github.com/davidtran001). 
