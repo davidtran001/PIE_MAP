@@ -6,7 +6,7 @@ Since some of the project are a part of the university's course work, most files
 PIE_MAP is co-developed by Raymond Yang (https://github.com/Electronic-Yoda), Stephen Wang (https://github.com/Stephenwang3801), and David Tran (https://github.com/davidtran001). 
 It depends on the ezgl graphics library https://github.com/mariobadr/ezgl, the GTK library, and data in OpenStreetMap. 
 
-Features in PIE-MAP
+# Features in PIE-MAP
 - Buttons that help the user interact by zooming in/out and panning
 - Display Points of Interests (POIs) like restaurants and schools
 - Display geography such as parks, rivers, lakes, streets, and buildings
