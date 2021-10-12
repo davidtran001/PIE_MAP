@@ -24,3 +24,11 @@ It depends on the ezgl graphics library https://github.com/mariobadr/ezgl, the G
 | Choosing screen for available cities | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Available%20Cities.png?raw=true"> |
 | Map Design | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Map%20Design.png?raw=true"> |
 | Search Functionality | ![Alt Text](https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Search.gif?raw=true) |
+| Map Layout with Panel | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Map%20Layout%20With%20Panel.png?raw=true"> |
+| Pathfinding Algorithm by using the search bar in the side panel | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Direction%20Algo%20Keyboard.gif?raw=true"> | 
+| Pathfinding Algorithm by clicking on the map | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Direction%20Algo%20Clicking.gif?raw=true"> | 
+| Courier Path with multiple destinations | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Courier%20Path.png?raw=true"> | 
+| Toronto | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Toronto.png?raw=true"> | 
+| Tokyo | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Tokyo.png?raw=true"> | 
+| London | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/London.png?raw=true"> | 
+| New York | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/New%20York.png?raw=true"> | 
