@@ -6,11 +6,13 @@ Since some of the project are a part of the university's course work, most files
 PIE_MAP is co-developed by Raymond Yang (https://github.com/Electronic-Yoda), Stephen Wang (https://github.com/Stephenwang3801), and David Tran (https://github.com/davidtran001). 
 It depends on the ezgl graphics library https://github.com/mariobadr/ezgl, the GTK library, and data in OpenStreetMap. 
 
-PIE_MAP_UI is the main user interface for PIE_MAP. The following features are avaliable in PIE_MAP_UI:
-- A Generate Buttons Algorithm
-- A Namespace for the direction-finding user interface
-- A Searchbar generator
-- Generation of drop down lists for searchbars
-- Data structures and functions/methods enabling program reactions to user input (mouse, keyboard)
-- Drawing major components of the UI on canvas
-
+Features in PIE-MAP
+- Buttons that help the user interact by zooming in/out and panning
+- Display Points of Interests (POIs) like restaurants and schools
+- Display geography such as parks, rivers, lakes, streets, and buildings
+- Clickable icons which can be toggled for more information
+- Operational searchbar to find specific intersections and streets
+- Labelled street and landmark names
+- Navigation Algorithm which can find an optimal path between intersections
+- Side bar with walking/driving instructions to follow the calculated route
+- Clickable path finding by clicking on two intersections when search mode is toggled
