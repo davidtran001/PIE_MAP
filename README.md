@@ -1,4 +1,3 @@
-![alt text](https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Logo.png?raw=true)
 # PIE_MAP
 PIE_MAP is a mapping application written in C++ allowing users to view maps and search for intersections, parks, points of interests, and directions in 19 major cities around the world. Developed for tourists in mind, PIE_MAP offers a great user interface with impressive visuals and easy navigation. 
 
@@ -17,3 +16,11 @@ It depends on the ezgl graphics library https://github.com/mariobadr/ezgl, the G
 - Navigation Algorithm which can find an optimal path between intersections
 - Side bar with walking/driving instructions to follow the calculated route
 - Clickable path finding by clicking on two intersections when search mode is toggled
+
+# The Project
+| Description | Image |
+|-------------|-------|
+| Logo and POI Pins | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Logo.png?raw=true" width="300" height="300"> <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Pins.png?raw=true" width="465" height="155"> |
+| Choosing screen for available cities | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Available%20Cities.png?raw=true"> |
+| Map Design | <img src="https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Map%20Design.png?raw=true"> |
+| Search Functionality | ![Alt Text](https://github.com/Stephenwang3801/PIE_MAP/blob/main/images/Search.gif?raw=true) |
