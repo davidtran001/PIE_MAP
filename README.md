@@ -15,7 +15,7 @@ Since some of the project are a part of the university's course work, most files
 - Clickable icons which can be toggled for more information
 - Operational searchbar to find specific intersections and streets
 - Labelled street and landmark names
-- Navigation Algorithm which can find an optimal path between intersections
+- Navigation Algorithm (A* Graph Search Algorithm) which can find an optimal path between intersections
 - Side bar with walking/driving instructions to follow the calculated route
 - Clickable path finding by clicking on two intersections when search mode is toggled
 
