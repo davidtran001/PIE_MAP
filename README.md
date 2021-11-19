@@ -1,5 +1,5 @@
 # PIE_MAP
-PIE_MAP is a mapping application written in C++ allowing users to view maps and search for intersections, parks, points of interests, and directions in 19 major cities around the world. Developed for tourists in mind, PIE_MAP offers a great user interface with impressive visuals and easy navigation. 
+PIE_MAP is a map application written in C++ allowing users to view maps and search for intersections, parks, points of interests, and directions in 19 major cities around the world. Developed for tourists in mind, PIE_MAP offers a great user interface with impressive visuals and easy navigation. 
 
 # Developers
 PIE_MAP is co-developed by Raymond Yang (https://github.com/Electronic-Yoda), Stephen Wang (https://github.com/Stephenwang3801), and David Tran (https://github.com/davidtran001). 
