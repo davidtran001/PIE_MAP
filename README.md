@@ -1,3 +1,4 @@
+![wideBG](https://user-images.githubusercontent.com/83682911/131602318-140a58d3-aead-448e-a32a-3c14120a7b1b.png)
 # PIE_MAP
 PIE_MAP is a map application written in C++ allowing users to view maps and search for intersections, parks, points of interests, and directions in 19 major cities around the world. Developed for tourists in mind, PIE_MAP offers a great user interface with impressive visuals and easy navigation. 
 
