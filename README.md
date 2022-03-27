@@ -4,7 +4,7 @@ PIE_MAP is a map application written in C++ allowing users to view maps and sear
 
 # Developers
 PIE_MAP is co-developed by Raymond Yang (https://github.com/Electronic-Yoda), Stephen Wang (https://github.com/Stephenwang3801), and David Tran (https://github.com/davidtran001). 
-It depends on the ezgl graphics library found here: https://github.com/mariobadr/ezgl, the GTK library, and data in OpenStreetMap. 
+It relies on the ezgl graphics library found here: https://github.com/mariobadr/ezgl, the GTK library, and data in OpenStreetMap. 
 
 # NOTE:
 Since some of the project are a part of the university's course work, most files in PIE_MAP are kept private on GitHub. This repository is meant to demonstrate PIE_MAP's functionality with gifs and photos. Additionally, it stores PIE_MAP's user interface and its relevant files, which are a deviation from the course and are meant to greatly expand PIE_MAP's user experience. Due to risks of Academic Offenses, the source code is not available on this public repository.
