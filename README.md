@@ -1,6 +1,6 @@
 ![wideBG](https://user-images.githubusercontent.com/83682911/131602318-140a58d3-aead-448e-a32a-3c14120a7b1b.png)
 # PIEMAP
-PIEMAP is a map application written in C++ allowing users to view maps and search for intersections, parks, points of interests, and directions in 19 major cities around the world. Developed for tourists in mind, PIEMAP offers a great user interface with impressive visuals and easy navigation. 
+PIEMAP is a map application written in C++ allowing users to navigate maps, search for intersections, parks, and points of interests in 19 major cities around the world. Developed for tourists in mind, PIEMAP offers a great user interface with impressive visuals and easy navigation. 
 
 # Developers
 PIEMAP is co-developed by Raymond Yang (https://github.com/Electronic-Yoda), Stephen Wang (https://github.com/Stephenwang3801), and David Tran (https://github.com/davidtran001). 
